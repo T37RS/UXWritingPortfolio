@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App Wireframe</title>
+</head>
+<body>
+    <!-- Example HTML structure for wireframe -->
+    <div id="home-screen">
+        <h1>Task List</h1>
+        <ul>
+            <li>Task 1 - Due Date</li>
+            <li>Task 2 - Due Date</li>
+            <!-- ... more tasks -->
+        </ul>
+        <button id="add-task-button">Add Task</button>
+    </div>
+
+    <div id="task-details-screen">
+        <h1>Task Details</h1>
+        <p>Task Title</p>
+        <p>Due Date</p>
+        <p>Description</p>
+        <button id="edit-task-button">Edit Task</button>
+        <button id="delete-task-button">Delete Task</button>
+    </div>
+
+    <div id="add-task-screen">
+        <h1>Add Task</h1>
+        <label for="task-title">Title:</label>
+        <input type="text" id="task-title">
+        <!-- ... other input fields -->
+        <button id="save-task-button">Save Task</button>
+    </div>
+
+    <!-- Example JavaScript for basic navigation (in a real app, you'd use a framework) -->
+    <script>
+        document.getElementById('add-task-button').addEventListener('click', function () {
+            document.getElementById('add-task-screen').style.display = 'block';
+            document.getElementById('home-screen').style.display = 'none';
+            document.getElementById('task-details-screen').style.display = 'none';
+        });
+
+        document.getElementById('edit-task-button').addEventListener('click', function () {
+            // Handle navigation to edit screen (not shown in this example)
+        });
+
+        document.getElementById('delete-task-button').addEventListener('click', function () {
+            // Handle task deletion (not shown in this example)
+        });
+
+        document.getElementById('save-task-button').addEventListener('click', function () {
+            // Handle task saving (not shown in this example)
+        });
+    </script>
+</body>
+</html>
