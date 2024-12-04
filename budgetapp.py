@@ -64,7 +64,7 @@ def home():
         }
 
         form {
-            background-color: white;
+            background-color: #add8e6;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
